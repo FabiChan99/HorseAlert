@@ -1,0 +1,20 @@
+name: HorseAlert
+main: com.fabichan.horsealert.Main
+version: 1.0
+author: Fabi-Chan
+description: A Spigot plugin that spawns a horse near the player when the /horsealert command is used.
+
+commands:
+  horsealert:
+    description: Spawns a horse 10 blocks away from the player and makes it walk towards the player.
+    usage: /<command>
+    permission: horsealert.use
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  horsealert.use:
+    description: Allows the use of the /horsealert command.
+    default: op
+  horsealert.bypasscooldown:
+    description: Allows to bypass the cooldown
+    default: op
